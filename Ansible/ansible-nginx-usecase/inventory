@@ -1,0 +1,5 @@
+[webservers] server1 ansible_host=localhost ansible_connection=local 
+server2 ansible_host=localhost ansible_connection=local 
+server3 ansible_host=localhost ansible_connection=local
+server4 ansible_host=localhost ansible_connection=local 
+server5 ansible_host=localhost ansible_connection=local

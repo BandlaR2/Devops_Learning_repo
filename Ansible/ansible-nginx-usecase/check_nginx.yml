@@ -1,0 +1,12 @@
+--- 
+- hosts: webservers
+  gather_facts: no 
+ 
+  tasks:
+  - name: Check Nginx Version
+    command: nginx -v 
+    register: nginx_version 
+    changed_when: false 
+  - name: Display Version 
+    debug: 
+      var: nginx_version.stderr

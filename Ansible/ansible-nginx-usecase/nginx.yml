@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  gather_facts: no
+
+  tasks:
+    - name: Install Nginx
+      homebrew:
+        name: nginx
+        state: present
